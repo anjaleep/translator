@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cTp-jA-EcD">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Translation-->
+        <scene sceneID="aa4-wx-hlR">
+            <objects>
+                <viewController title="Translation" id="nqL-F2-aYb" customClass="TranslationViewController" customModule="BiswasPromitFinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zmS-8K-LLD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Translation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qyz-IA-QiD">
+                                <rect key="frame" x="147.5" y="105" width="119" height="29"/>
+                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Eg-Gz-wam">
+                                <rect key="frame" x="161" y="203" width="92" height="24"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter text here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dOg-kM-8c3">
+                                <rect key="frame" x="145.5" y="241" width="123" height="34"/>
+                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="done:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="3mJ-Ls-Ppt"/>
+                                    <action selector="done:" destination="nqL-F2-aYb" eventType="primaryActionTriggered" id="sES-JE-b6l"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Translated Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u86-vu-MeU">
+                                <rect key="frame" x="138.5" y="406.5" width="137" height="24"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2fu-cf-TLs">
+                                <rect key="frame" x="23" y="438.5" width="368" height="230"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZi-jw-HoW">
+                                <rect key="frame" x="154" y="711" width="106" height="18"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Reset" backgroundImage="square" catalog="system">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" systemColor="systemYellowColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetTextButton:" destination="nqL-F2-aYb" eventType="touchUpInside" id="Bdw-zd-11K"/>
+                                    <action selector="resetTextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cWF-s8-iUe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4I5-iY-euY">
+                                <rect key="frame" x="72" y="681" width="271" height="22"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="View Translated Words">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <imageReference key="backgroundImage" image="square" catalog="system" symbolScale="large" renderingMode="template"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O2k-nc-z9w">
+                                <rect key="frame" x="124" y="284" width="166" height="18"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Correct">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" systemColor="tertiarySystemBackgroundColor"/>
+                                    <imageReference key="backgroundImage" image="square" catalog="system" renderingMode="template"/>
+                                </state>
+                                <connections>
+                                    <action selector="correct:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wgy-BK-nCs"/>
+                                    <action selector="correctTextButton:" destination="nqL-F2-aYb" eventType="touchUpInside" id="D63-oy-yL2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NOp-y8-Wga"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="Qyz-IA-QiD" firstAttribute="centerX" secondItem="zmS-8K-LLD" secondAttribute="centerX" id="13e-A0-ebx"/>
+                            <constraint firstItem="2fu-cf-TLs" firstAttribute="top" secondItem="u86-vu-MeU" secondAttribute="bottom" constant="8" symbolic="YES" id="3DP-oX-brc"/>
+                            <constraint firstItem="dOg-kM-8c3" firstAttribute="top" secondItem="6Eg-Gz-wam" secondAttribute="bottom" constant="14" id="7HO-JQ-S3n"/>
+                            <constraint firstItem="TZi-jw-HoW" firstAttribute="top" secondItem="4I5-iY-euY" secondAttribute="bottom" constant="8" symbolic="YES" id="7ZI-dC-U72"/>
+                            <constraint firstItem="dOg-kM-8c3" firstAttribute="top" secondItem="6Eg-Gz-wam" secondAttribute="bottom" constant="14" id="IRb-cz-88Y"/>
+                            <constraint firstItem="6Eg-Gz-wam" firstAttribute="top" secondItem="Qyz-IA-QiD" secondAttribute="bottom" constant="69" id="LiT-ju-iZx"/>
+                            <constraint firstItem="4I5-iY-euY" firstAttribute="top" secondItem="2fu-cf-TLs" secondAttribute="bottom" constant="14" id="MCd-31-8gN"/>
+                            <constraint firstItem="u86-vu-MeU" firstAttribute="centerX" secondItem="zmS-8K-LLD" secondAttribute="centerX" id="QpZ-ix-DDa"/>
+                            <constraint firstItem="O2k-nc-z9w" firstAttribute="top" secondItem="dOg-kM-8c3" secondAttribute="bottom" constant="8" symbolic="YES" id="R8i-4o-YZ6"/>
+                            <constraint firstItem="dOg-kM-8c3" firstAttribute="centerX" secondItem="zmS-8K-LLD" secondAttribute="centerX" id="Tbh-jA-jeu"/>
+                            <constraint firstItem="6Eg-Gz-wam" firstAttribute="top" secondItem="Qyz-IA-QiD" secondAttribute="bottom" constant="69" id="WEP-Rb-2jb"/>
+                            <constraint firstItem="NOp-y8-Wga" firstAttribute="bottom" secondItem="TZi-jw-HoW" secondAttribute="bottom" constant="82.5" id="e3H-ZM-w8s"/>
+                            <constraint firstItem="6Eg-Gz-wam" firstAttribute="centerX" secondItem="zmS-8K-LLD" secondAttribute="centerX" id="ePs-YF-9jE"/>
+                            <constraint firstItem="2fu-cf-TLs" firstAttribute="top" secondItem="u86-vu-MeU" secondAttribute="bottom" constant="8" symbolic="YES" id="ho0-fH-uwQ"/>
+                            <constraint firstItem="u86-vu-MeU" firstAttribute="top" secondItem="O2k-nc-z9w" secondAttribute="bottom" constant="103.5" id="lXC-03-EPK"/>
+                            <constraint firstItem="Qyz-IA-QiD" firstAttribute="top" secondItem="NOp-y8-Wga" secondAttribute="top" constant="61" id="m9s-eK-tNz"/>
+                            <constraint firstItem="O2k-nc-z9w" firstAttribute="centerX" secondItem="zmS-8K-LLD" secondAttribute="centerX" id="nWJ-CC-84U"/>
+                            <constraint firstItem="TZi-jw-HoW" firstAttribute="centerX" secondItem="zmS-8K-LLD" secondAttribute="centerX" id="pP3-Fp-Dw8"/>
+                            <constraint firstItem="2fu-cf-TLs" firstAttribute="centerX" secondItem="zmS-8K-LLD" secondAttribute="centerX" id="wKA-d3-aZN"/>
+                            <constraint firstItem="4I5-iY-euY" firstAttribute="centerX" secondItem="zmS-8K-LLD" secondAttribute="centerX" id="wgl-gO-6Aj"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Translation" id="h80-s0-yaA"/>
+                    <connections>
+                        <outlet property="messageLabel" destination="Qyz-IA-QiD" id="MJf-Vf-Wjn"/>
+                        <outlet property="translateField" destination="dOg-kM-8c3" id="Rby-yF-u9N"/>
+                        <outlet property="translatedView" destination="2fu-cf-TLs" id="LB0-At-ste"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Ss-od-UUN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="60.869565217391312" y="-247.09821428571428"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="HgH-jp-QDY">
+            <objects>
+                <tabBarController id="cTp-jA-EcD" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GOf-IY-Grn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="nqL-F2-aYb" kind="relationship" relationship="viewControllers" id="F7H-Uw-5jM"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="wco-Av-Ebr"/>
+                        <segue destination="uMZ-rR-O7d" kind="relationship" relationship="viewControllers" id="ChY-TI-CXH"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dOd-jU-7VQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1041" y="87"/>
+        </scene>
+        <!--Flashcards-->
+        <scene sceneID="9kL-8o-vGc">
+            <objects>
+                <viewController storyboardIdentifier="Flashcard" title="Flashcards" id="uMZ-rR-O7d" customClass="FlashcardViewController" customModule="BiswasPromitFinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nv8-fx-IuD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zAq-n5-MoS">
+                                <rect key="frame" x="20" y="79" width="374" height="695"/>
+                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qzL-a3-EVB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qzL-a3-EVB" firstAttribute="bottom" secondItem="zAq-n5-MoS" secondAttribute="bottom" constant="39" id="3PR-Iu-itI"/>
+                            <constraint firstItem="zAq-n5-MoS" firstAttribute="top" secondItem="qzL-a3-EVB" secondAttribute="top" constant="35" id="VRi-oh-b7a"/>
+                            <constraint firstItem="qzL-a3-EVB" firstAttribute="trailing" secondItem="zAq-n5-MoS" secondAttribute="trailing" constant="20" id="VdG-QU-ozN"/>
+                            <constraint firstItem="zAq-n5-MoS" firstAttribute="leading" secondItem="qzL-a3-EVB" secondAttribute="leading" constant="20" id="hHx-gC-FgP"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Flashcards" id="LWt-S6-zfT"/>
+                    <connections>
+                        <outlet property="messageLabel" destination="zAq-n5-MoS" id="wXQ-0e-Ep8"/>
+                        <outlet property="swiper" destination="BrP-Vy-o84" id="hDf-CI-ulN"/>
+                        <outlet property="tapper" destination="RIQ-uY-QZj" id="xY7-n3-VUQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oeD-Fp-SmA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="RIQ-uY-QZj"/>
+                <swipeGestureRecognizer direction="right" id="BrP-Vy-o84"/>
+            </objects>
+            <point key="canvasLocation" x="24.637681159420293" y="1074.1071428571429"/>
+        </scene>
+        <!--Correction-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Correction" id="BYZ-38-t0r" customClass="ViewController" customModule="BiswasPromitFinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDK-oc-N2j">
+                                <rect key="frame" x="161" y="226" width="92" height="24"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Corrected Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="784-ei-zhl">
+                                <rect key="frame" x="141" y="422" width="132" height="24"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Exx-hh-1om">
+                                <rect key="frame" x="20" y="454" width="374" height="256.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S7s-MI-NJr">
+                                <rect key="frame" x="177.5" y="303" width="59" height="17.5"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Correct">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" systemColor="tertiarySystemBackgroundColor"/>
+                                    <imageReference key="backgroundImage" image="square" catalog="system" renderingMode="template"/>
+                                </state>
+                                <connections>
+                                    <action selector="correct:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sCV-yx-fnd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27s-Rd-M5b">
+                                <rect key="frame" x="125" y="717.5" width="164" height="22"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="View Incorrect Words">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <imageReference key="backgroundImage" image="square" catalog="system" symbolScale="large" renderingMode="template"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter text here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uif-QY-Dpi">
+                                <rect key="frame" x="145.5" y="260" width="123" height="34"/>
+                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="done:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="tVD-kJ-S5M"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text Corrector" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="goC-Fe-iI6">
+                                <rect key="frame" x="127" y="113" width="160" height="29"/>
+                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="22"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PaI-gJ-cyK">
+                                <rect key="frame" x="185" y="747.5" width="44" height="17.5"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Reset" backgroundImage="square" catalog="system">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" systemColor="systemYellowColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetTextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kIL-bw-Zoi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.19486915993006118" green="0.55594151228973554" blue="0.41733727467793325" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="27s-Rd-M5b" firstAttribute="top" secondItem="Exx-hh-1om" secondAttribute="bottom" constant="8" symbolic="YES" id="4aj-47-V6g"/>
+                            <constraint firstItem="784-ei-zhl" firstAttribute="top" secondItem="S7s-MI-NJr" secondAttribute="bottom" constant="100" id="DsV-2W-3qg"/>
+                            <constraint firstItem="Uif-QY-Dpi" firstAttribute="top" secondItem="hDK-oc-N2j" secondAttribute="bottom" constant="10" id="Jco-lI-SWH"/>
+                            <constraint firstItem="27s-Rd-M5b" firstAttribute="top" secondItem="Exx-hh-1om" secondAttribute="bottom" constant="8" symbolic="YES" id="NEE-EV-jn5"/>
+                            <constraint firstItem="PaI-gJ-cyK" firstAttribute="top" secondItem="27s-Rd-M5b" secondAttribute="bottom" constant="8" symbolic="YES" id="Nuc-Ni-hs6"/>
+                            <constraint firstItem="hDK-oc-N2j" firstAttribute="top" secondItem="goC-Fe-iI6" secondAttribute="bottom" constant="84" id="OV4-TE-cug"/>
+                            <constraint firstItem="S7s-MI-NJr" firstAttribute="top" secondItem="Uif-QY-Dpi" secondAttribute="bottom" constant="8" symbolic="YES" id="PuV-yk-AyO"/>
+                            <constraint firstItem="784-ei-zhl" firstAttribute="top" secondItem="S7s-MI-NJr" secondAttribute="bottom" constant="100" id="QiW-vQ-kWE"/>
+                            <constraint firstItem="Exx-hh-1om" firstAttribute="top" secondItem="784-ei-zhl" secondAttribute="bottom" constant="8" symbolic="YES" id="VhH-DQ-ivJ"/>
+                            <constraint firstItem="hDK-oc-N2j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WrR-ZS-IGD"/>
+                            <constraint firstItem="goC-Fe-iI6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="69" id="X1Y-ZI-Vrb"/>
+                            <constraint firstItem="Uif-QY-Dpi" firstAttribute="top" secondItem="hDK-oc-N2j" secondAttribute="bottom" constant="10" id="YlP-vE-qvw"/>
+                            <constraint firstItem="Uif-QY-Dpi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZFX-Nd-su3"/>
+                            <constraint firstItem="784-ei-zhl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b10-pE-5z7"/>
+                            <constraint firstItem="goC-Fe-iI6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="byp-g1-PM9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PaI-gJ-cyK" secondAttribute="bottom" constant="46.5" id="cA9-dG-vGy"/>
+                            <constraint firstItem="PaI-gJ-cyK" firstAttribute="top" secondItem="27s-Rd-M5b" secondAttribute="bottom" constant="8" symbolic="YES" id="h4s-V6-Vs2"/>
+                            <constraint firstItem="S7s-MI-NJr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ixr-Rx-M9M"/>
+                            <constraint firstItem="hDK-oc-N2j" firstAttribute="top" secondItem="goC-Fe-iI6" secondAttribute="bottom" constant="84" id="ky9-76-gsa"/>
+                            <constraint firstItem="Exx-hh-1om" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nsh-Y1-0Uj"/>
+                            <constraint firstItem="Exx-hh-1om" firstAttribute="top" secondItem="784-ei-zhl" secondAttribute="bottom" constant="8" symbolic="YES" id="udK-Kp-NA5"/>
+                            <constraint firstItem="27s-Rd-M5b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vET-sg-tkW"/>
+                            <constraint firstItem="PaI-gJ-cyK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="veW-Zs-tSV"/>
+                            <constraint firstItem="S7s-MI-NJr" firstAttribute="top" secondItem="Uif-QY-Dpi" secondAttribute="bottom" constant="8" symbolic="YES" id="z4E-6Z-Wm8"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Correction" id="aM8-et-Rz5"/>
+                    <connections>
+                        <outlet property="correctView" destination="Exx-hh-1om" id="8Dg-m9-yQv"/>
+                        <outlet property="messageLabel" destination="goC-Fe-iI6" id="cUB-T6-eHV"/>
+                        <outlet property="textEntry" destination="Uif-QY-Dpi" id="ina-JL-E9s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="60.869565217391312" y="418.52678571428572"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="square" catalog="system" width="128" height="114"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
